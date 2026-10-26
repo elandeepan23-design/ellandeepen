@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Which second lock: SMS, app or key</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 1200px; height: 1500px; box-sizing: border-box; padding: 56px 48px 40px; background: #F6F5F0; color: #14213D; font-family: 'DM Sans', Arial, sans-serif; display: flex; flex-direction: column; gap: 28px">
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #17695F">Password and MFA habits · hostel first-years</p>
+<h1 style="margin: 0; font-size: 68px; line-height: 1.05; font-weight: 700">Which second lock should you use?</h1>
+<p style="margin: 0; font-size: 28px; line-height: 1.35; color: #3A4660">Any MFA beats none. Pick the highest rung each account allows.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: 200px repeat(3, minmax(0, 1fr)); gap: 12px; align-items: stretch">
+
+<div></div>
+<div style="background: #14213D; color: #F6F5F0; border-radius: 16px 16px 0 0; padding: 22px 18px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start">
+<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><rect x="6" y="8" width="44" height="30" rx="8" fill="none" stroke="#F2B26B" stroke-width="3"/><path d="M16 38 L14 50 L28 38" fill="none" stroke="#F2B26B" stroke-width="3" stroke-linejoin="round"/><circle cx="19" cy="23" r="3" fill="#F2B26B"/><circle cx="28" cy="23" r="3" fill="#F2B26B"/><circle cx="37" cy="23" r="3" fill="#F2B26B"/></svg>
+<p style="margin: 0; font-size: 20px; font-weight: 700; color: #F2B26B">RUNG 1 OF 3</p>
+<p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1">SMS code</p>
+</div>
+<div style="background: #14213D; color: #F6F5F0; border-radius: 16px 16px 0 0; padding: 22px 18px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start">
+<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><rect x="16" y="4" width="26" height="48" rx="6" fill="none" stroke="#7FD1C4" stroke-width="3"/><circle cx="29" cy="28" r="9" fill="none" stroke="#7FD1C4" stroke-width="3"/><path d="M29 28 L29 22" stroke="#7FD1C4" stroke-width="3" stroke-linecap="round"/><path d="M29 28 L34 31" stroke="#7FD1C4" stroke-width="3" stroke-linecap="round"/></svg>
+<p style="margin: 0; font-size: 20px; font-weight: 700; color: #7FD1C4">RUNG 2 OF 3</p>
+<p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1">Authenticator app</p>
+</div>
+<div style="background: #14213D; color: #F6F5F0; border-radius: 16px 16px 0 0; padding: 22px 18px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start">
+<svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true"><circle cx="18" cy="28" r="10" fill="none" stroke="#9BE08A" stroke-width="3"/><circle cx="18" cy="28" r="3" fill="#9BE08A"/><path d="M28 28 L50 28 M42 28 L42 36 M49 28 L49 34" fill="none" stroke="#9BE08A" stroke-width="3" stroke-linecap="round"/></svg>
+<p style="margin: 0; font-size: 20px; font-weight: 700; color: #9BE08A">RUNG 3 OF 3</p>
+<p style="margin: 0; font-size: 32px; font-weight: 700; line-height: 1.1">Security key or passkey</p>
+</div>
+
+<div style="padding: 20px 6px; font-size: 24px; font-weight: 700; display: flex; align-items: center">Phishing-resistant?</div>
+<div style="background: #FFFFFF; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #F8DCCF; color: #8A2E0E; padding: 4px 14px; border-radius: 999px">No</p><p style="margin: 0; font-size: 22px; line-height: 1.3">A fake site can trick you into typing the code.</p></div>
+<div style="background: #FFFFFF; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #F8DCCF; color: #8A2E0E; padding: 4px 14px; border-radius: 999px">No</p><p style="margin: 0; font-size: 22px; line-height: 1.3">A fake site can still collect the code.</p></div>
+<div style="background: #FFFFFF; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #D4EEE8; color: #0F5047; padding: 4px 14px; border-radius: 999px">Yes</p><p style="margin: 0; font-size: 22px; line-height: 1.3">FIDO2 refuses to work on a look-alike site.</p></div>
+
+<div style="padding: 20px 6px; font-size: 24px; font-weight: 700; display: flex; align-items: center">Works without mobile network?</div>
+<div style="background: #ECE9DE; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #F8DCCF; color: #8A2E0E; padding: 4px 14px; border-radius: 999px">No</p><p style="margin: 0; font-size: 22px; line-height: 1.3">Needs signal to receive the text.</p></div>
+<div style="background: #ECE9DE; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #D4EEE8; color: #0F5047; padding: 4px 14px; border-radius: 999px">Yes</p><p style="margin: 0; font-size: 22px; line-height: 1.3">Codes are made on your phone.</p></div>
+<div style="background: #ECE9DE; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px"><p style="margin: 0; align-self: flex-start; font-size: 24px; font-weight: 700; background: #D4EEE8; color: #0F5047; padding: 4px 14px; border-radius: 999px">Yes</p><p style="margin: 0; font-size: 22px; line-height: 1.3">Works from the key or your device.</p></div>
+
+<div style="padding: 20px 6px; font-size: 24px; font-weight: 700; display: flex; align-items: center">Cost</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 22px; line-height: 1.3">Free. Uses your SIM.</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 22px; line-height: 1.3">Free app.</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 22px; line-height: 1.3">Passkeys on your own devices are free. A hardware key is a purchase.</div>
+
+<div style="padding: 20px 6px; font-size: 24px; font-weight: 700; display: flex; align-items: center">Setup effort</div>
+<div style="background: #ECE9DE; padding: 20px 18px; font-size: 22px; line-height: 1.3">Easiest: enter your number.</div>
+<div style="background: #ECE9DE; padding: 20px 18px; font-size: 22px; line-height: 1.3">Easy: scan a QR code once, save recovery codes.</div>
+<div style="background: #ECE9DE; padding: 20px 18px; font-size: 22px; line-height: 1.3">A few minutes. Register a spare key or a second device.</div>
+
+<div style="padding: 20px 6px; font-size: 24px; font-weight: 700; display: flex; align-items: center">Use it for</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 24px; font-weight: 700; line-height: 1.25; border-radius: 0 0 16px 16px">Only when nothing better exists</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 24px; font-weight: 700; line-height: 1.25; border-radius: 0 0 16px 16px">Most accounts</div>
+<div style="background: #FFFFFF; padding: 20px 18px; font-size: 24px; font-weight: 700; line-height: 1.25; border-radius: 0 0 16px 16px">Email and your password-manager vault</div>
+</div>
+
+<div style="display: flex; gap: 16px">
+<div style="flex: 1; background: #17695F; color: #FFFFFF; border-radius: 16px; padding: 22px 24px; font-size: 26px; font-weight: 700; line-height: 1.3">Never share a code or recovery code with anyone, even someone who says they are from your bank or college.</div>
+<div style="flex: 1; background: #14213D; color: #F6F5F0; border-radius: 16px; padding: 22px 24px; font-size: 26px; font-weight: 700; line-height: 1.3">Approve only logins you started. Unexpected prompt? Deny it and change the password.</div>
+</div>
+
+<p style="margin: 0; font-size: 18px; color: #4A5568; line-height: 1.4">Sources: CISA (phishing-resistant MFA, FIDO/WebAuthn); NIST small-business MFA fact sheet, Feb 2024 (SMS and one-time codes can be phished); CERT-In MFA advice. Rows summarise the Capstone 1 research report.</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1200,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>

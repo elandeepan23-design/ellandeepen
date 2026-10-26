@@ -1,0 +1,13 @@
+password (DUMMY),length,naive_bits,realistic_bits,reason,avg_time_at_1e10_guesses_per_s
+Pass@123,8,52.4,16.6,on blocklist,under a second
+Hostel@2026,11,72.1,30.0,common word + decoration,under a second
+Welcome1!,9,59.0,30.0,common word + decoration,under a second
+Tr0ub4dor&3,11,72.1,30.0,common word + decoration,under a second
+k7#Qm2$vL9xP,12,78.7,78.7,no pattern found (random-looking),"754,050 years"
+akcUvJXdoKhX$8FS  (generated now),16,104.9,104.9,truly random,5.9e+13 years
+"meadow-raven-ash-iris  (4 words, 64-word list)",21,-,24.0,random words,under a second
+"ember-sunset-daisy-zephyr-zinc-comet  (6 words, 64-word list)",36,-,36.0,random words,3 seconds
+(theory) 4 random words from a 7776-word list,-,-,51.7,random words,2 days
+(theory) 5 random words from a 7776-word list,-,-,64.6,random words,45 years
+(theory) 6 random words from a 7776-word list,-,-,77.5,random words,"350,270 years"
+(theory) 7 random words from a 7776-word list,-,-,90.5,random words,2.7e+09 years
